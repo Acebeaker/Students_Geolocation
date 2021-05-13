@@ -1,6 +1,5 @@
-import json
-import haversine as hs
 from packages.functions import *
+import unittest
 
 
 engineering_classroom = { 'name': 'Principles of computational geo-location analysis', 'latitude': 34.069140, 'longitude': -118.442689 }
@@ -15,6 +14,11 @@ pam_student = { 'name': 'Pam Bam', 'latitude': 34.071513, 'longitude': -118.4411
 
 student_list = [john_student,jane_student,pam_student]
 classroom_list = [geology_classroom,psychology_classroom,music_classroom,humanities_classroom,engineering_classroom]
+
+
+
+
+
 
 if __name__ == "__main__":
     print(studentsInClasses(student_list, classroom_list))
