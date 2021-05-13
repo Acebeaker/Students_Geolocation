@@ -16,7 +16,7 @@ class functionTest(unittest.TestCase):
 
         student_list = [john_student,jane_student,pam_student]
         classroom_list = [geology_classroom,psychology_classroom,music_classroom,humanities_classroom,engineering_classroom]
-        self.assertEqual(studentsInClasses(student_list, classroom_list), [{'name': 'Jane Graham', 'latitude': 34.069601, 'longitude': -118.441862}, {'name': 'Pam Bam', 'latitude': 34.071513, 'longitude': -118.441181}, {'name': 'John Wilson', 'latitude': 34.069149, 'longitude': -118.442639}])
+        self.assertEqual(studentsInClasses(1, classroom_list), [{'name': 'Jane Graham', 'latitude': 34.069601, 'longitude': -118.441862}, {'name': 'Pam Bam', 'latitude': 34.071513, 'longitude': -118.441181}, {'name': 'John Wilson', 'latitude': 34.069149, 'longitude': -118.442639}])
         
     def test_studentsInClasses_2(self):
         engineering_classroom = { 'name': 'Principles of computational geo-location analysis', 'latitude': 34.069140, 'longitude': -118.442689 }

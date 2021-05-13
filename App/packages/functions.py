@@ -18,6 +18,10 @@ def bounding_box(lat, lng, distance):
     return maxlat,minlat,maxlong,minlong
     
 def studentsInClasses(student_list, classroom_list):
+    if not isinstance(student_list,(list)):
+        raise TypeError("Expected list for parameter 'sudent_list'")
+    if not isinstance(classroom_list,(list)):
+        raise TypeError("Expected list for parameter 'classroom_list'")
     result = []
     for classroom in classroom_list:
         #Assumes we are far from the poles and the +/- 180 longitude
@@ -32,6 +36,10 @@ def studentsInClasses(student_list, classroom_list):
     return result
 
 def studentClustersInClasses(student_list, classroom_list):
+    if not isinstance(student_list,(list)):
+        raise TypeError("Expected list for parameter 'sudent_list'")
+    if not isinstance(classroom_list,(list)):
+        raise TypeError("Expected list for parameter 'classroom_list'")
     result = []
     for classroom in classroom_list:
         tmp = []
